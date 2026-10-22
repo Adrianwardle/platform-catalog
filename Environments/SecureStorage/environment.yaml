@@ -1,0 +1,12 @@
+name: SecureStorage
+version: 1.0.0
+summary: Secure storage account
+description: Storage account with platform defaults - UK region, TLS 1.2, no public access.
+runner: Bicep
+templatePath: main.bicep
+parameters:
+  - id: name
+    name: Name
+    description: 3 to 11 lowercase letters and numbers
+    type: string
+    required: true
